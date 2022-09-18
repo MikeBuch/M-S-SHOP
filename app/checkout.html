@@ -69,7 +69,7 @@
         </div>
       </div>
     </div>
-    <div class="header-bottom header-bottom__pages">
+    <div class="header-bottom">
       <div class="container-big">
         <div class="header-bottom__inner">
           <div class="header-bottom__logo">
@@ -128,6 +128,7 @@
   </header>
 
   <main class="main">
+
     <section class="top">
       <div class="container">
         <div class="breadcrumbs">
@@ -149,7 +150,7 @@
             </li>
             <li class="breadcrumbs__item">
               <a class="breadcrumbs__link" href="#">
-                Кошик
+                Оформлення замовлення
               </a>
             </li>
           </ul>
@@ -157,175 +158,24 @@
       </div>
     </section>
 
-    <section class="cart">
+    <section class="checkout">
       <div class="container">
-        <div class="cart__inner">
-          <div class="cart__inner-title">
-            <div class="cart__title-product">
-              <h6 class="cart__title">
-                Продукти
-              </h6>
-            </div>
-            <div class="cart__title-sizecolor">
-              <h6 class="cart__title">
-                Колір та розмір
-              </h6>
-            </div>
-            <div class="cart__title-number">
-              <h6 class="cart__title">
-                Кількість
-              </h6>
-            </div>
-            <div class="cart__title-price">
-              <h6 class="cart__title">
-                Ціна
-              </h6>
-            </div>
-            <div class="cart__title-result">
-              <h6 class="cart__title">
-                Всього
-              </h6>
-            </div>
-          </div>
-          <div class="cart__content">
-            <div class="cart__product">
-                <img class="cart__product-img" src="images/product/13.jpg" alt="">
-                <p class="cart__product-text">
-                  Сумка Kelly
-                </p>
-            </div>
-            <div class="cart__sizecolor">
-              <p class="cart__size-text">Розмір: великий</p>
-              <p class="cart__color-text">Колір: бузковий</p>
-            </div>
-            <div class="cart__number">
-              <form class="cart__number-form" action="#">
-                <input class="cart__number-input" type="number" value="1" min="1">
-              </form>
-            </div>
-            <div class="cart__price">
-              <p class="cart__price-text">13299.00 грн</p>
-            </div>
-            <div class="cart__result">
-              <p class="cart__result-text">13299.00 грн</p>
-              <div class="cart__result-img">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px"
-                  viewBox="0 0 15 15" version="1.1">
-                  <g id="surface1">
-                    <path
-                      d="M 5.125 5.125 C 5.402344 4.855469 5.847656 4.855469 6.097656 5.125 L 7.472656 6.507812 L 8.875 5.125 C 9.152344 4.855469 9.597656 4.855469 9.847656 5.125 C 10.144531 5.402344 10.144531 5.847656 9.847656 6.097656 L 8.492188 7.472656 L 9.847656 8.875 C 10.144531 9.152344 10.144531 9.597656 9.847656 9.847656 C 9.597656 10.144531 9.152344 10.144531 8.875 9.847656 L 7.472656 8.492188 L 6.097656 9.847656 C 5.847656 10.144531 5.402344 10.144531 5.125 9.847656 C 4.855469 9.597656 4.855469 9.152344 5.125 8.875 L 6.507812 7.472656 L 5.125 6.097656 C 4.855469 5.847656 4.855469 5.402344 5.125 5.125 Z M 15 7.5 C 15 11.640625 11.640625 15 7.5 15 C 3.359375 15 0 11.640625 0 7.5 C 0 3.359375 3.359375 0 7.5 0 C 11.640625 0 15 3.359375 15 7.5 Z M 7.5 1.40625 C 4.132812 1.40625 1.40625 4.132812 1.40625 7.5 C 1.40625 10.867188 4.132812 13.59375 7.5 13.59375 C 10.867188 13.59375 13.59375 10.867188 13.59375 7.5 C 13.59375 4.132812 10.867188 1.40625 7.5 1.40625 Z M 7.5 1.40625 " />
-                  </g>
-                </svg>
+        <div class="checkout__wrapper">
+          <div class="checkout-details">
+            <h5 class="checkout-details__title">платіжні реквізити</h5>
+            <form class="checkout-details__form" action="#">
+              <div class="checkout-details__box">
+                <div class="checkout-details__box-lastname">
+                  <label class="checkout-details__label">Прізвище <span>*</span></label>
+                  <input class="checkout-details__input" type="text" required>
+                </div>
+                <div class="checkout-details__box-name">
+                  <label class="checkout-details__label">Імя <span>*</span></label>
+                  <input class="checkout-details__input" type="text" required>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="cart__content">
-            <div class="cart__product">
-              <img class="cart__product-img" src="images/product/scarf7.jpg" alt="">
-              <p class="cart__product-text">
-                Палантин Жіночий
-              </p>
-            </div>
-            <div class="cart__sizecolor">
-              <p class="cart__size-text">Розмір: 140/70см</p>
-              <p class="cart__color-text">Колір: коричневий</p>
-            </div>
-            <div class="cart__number">
-              <form class="cart__number-form" action="#">
-                <input class="cart__number-input" type="number" value="1" min="1">
-              </form>
-            </div>
-            <div class="cart__price">
-              <p class="cart__price-text">1799.00 грн</p>
-            </div>
-            <div class="cart__result">
-              <p class="cart__result-text">1799.00 грн</p>
-              <div class="cart__result-img">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px"
-                  viewBox="0 0 15 15" version="1.1">
-                  <g id="surface1">
-                    <path
-                      d="M 5.125 5.125 C 5.402344 4.855469 5.847656 4.855469 6.097656 5.125 L 7.472656 6.507812 L 8.875 5.125 C 9.152344 4.855469 9.597656 4.855469 9.847656 5.125 C 10.144531 5.402344 10.144531 5.847656 9.847656 6.097656 L 8.492188 7.472656 L 9.847656 8.875 C 10.144531 9.152344 10.144531 9.597656 9.847656 9.847656 C 9.597656 10.144531 9.152344 10.144531 8.875 9.847656 L 7.472656 8.492188 L 6.097656 9.847656 C 5.847656 10.144531 5.402344 10.144531 5.125 9.847656 C 4.855469 9.597656 4.855469 9.152344 5.125 8.875 L 6.507812 7.472656 L 5.125 6.097656 C 4.855469 5.847656 4.855469 5.402344 5.125 5.125 Z M 15 7.5 C 15 11.640625 11.640625 15 7.5 15 C 3.359375 15 0 11.640625 0 7.5 C 0 3.359375 3.359375 0 7.5 0 C 11.640625 0 15 3.359375 15 7.5 Z M 7.5 1.40625 C 4.132812 1.40625 1.40625 4.132812 1.40625 7.5 C 1.40625 10.867188 4.132812 13.59375 7.5 13.59375 C 10.867188 13.59375 13.59375 10.867188 13.59375 7.5 C 13.59375 4.132812 10.867188 1.40625 7.5 1.40625 Z M 7.5 1.40625 " />
-                  </g>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="cart__content">
-            <div class="cart__product">
-              <img class="cart__product-img" src="images/product/clock2.jpg" alt="">
-              <p class="cart__product-text">
-                Годинник Жіночий
-              </p>
-            </div>
-            <div class="cart__sizecolor">
-              <p class="cart__size-text">Розмір:</p>
-              <p class="cart__color-text">Колір: чорний</p>
-            </div>
-            <div class="cart__number">
-              <form class="cart__number-form" action="#">
-                <input class="cart__number-input" type="number" value="1" min="1">
-              </form>
-            </div>
-            <div class="cart__price">
-              <p class="cart__price-text">4499.00 грн</p>
-            </div>
-            <div class="cart__result">
-              <p class="cart__result-text">4499.00 грн</p>
-              <div class="cart__result-img">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px"
-                  viewBox="0 0 15 15" version="1.1">
-                  <g id="surface1">
-                    <path
-                      d="M 5.125 5.125 C 5.402344 4.855469 5.847656 4.855469 6.097656 5.125 L 7.472656 6.507812 L 8.875 5.125 C 9.152344 4.855469 9.597656 4.855469 9.847656 5.125 C 10.144531 5.402344 10.144531 5.847656 9.847656 6.097656 L 8.492188 7.472656 L 9.847656 8.875 C 10.144531 9.152344 10.144531 9.597656 9.847656 9.847656 C 9.597656 10.144531 9.152344 10.144531 8.875 9.847656 L 7.472656 8.492188 L 6.097656 9.847656 C 5.847656 10.144531 5.402344 10.144531 5.125 9.847656 C 4.855469 9.597656 4.855469 9.152344 5.125 8.875 L 6.507812 7.472656 L 5.125 6.097656 C 4.855469 5.847656 4.855469 5.402344 5.125 5.125 Z M 15 7.5 C 15 11.640625 11.640625 15 7.5 15 C 3.359375 15 0 11.640625 0 7.5 C 0 3.359375 3.359375 0 7.5 0 C 11.640625 0 15 3.359375 15 7.5 Z M 7.5 1.40625 C 4.132812 1.40625 1.40625 4.132812 1.40625 7.5 C 1.40625 10.867188 4.132812 13.59375 7.5 13.59375 C 10.867188 13.59375 13.59375 10.867188 13.59375 7.5 C 13.59375 4.132812 10.867188 1.40625 7.5 1.40625 Z M 7.5 1.40625 " />
-                  </g>
-                </svg>
-              </div>
-            </div>
-          </div>
-          <div class="cart__btn">
-            <div class="cart__btn-update">
-              <a class="cart__btn-link" href="#">оновити кошик</a>
-            </div>
-            <div class="cart__btn-next">
-              <a class="cart__btn-link" href="#">продовжити покупки</a>
-            </div>
-          </div>
-        </div>
-        <div class="cart-discount">
-          <div class="cart-discount__item">
-            <h5 class="cart-discount__title">
-              Використовуйте код купона
-            </h5>
-            <div class="cart-discount__subtitle">
-              Введіть свій купон тут
-            </div>
-            <form class="cart-discount__form" action="#">
-              <input class="cart-discount__input" type="text" placeholder="Введіть свій купон тут">
-              <button class="cart-discount__btn" type="submit">застосувати</button>
-            </form>
-          </div>
-          <div class="cart-discount__item">
-            <h5 class="cart-discount__title">
-            Скористайтеся подарунковим ваучером
-            </h5>
-            <div class="cart-discount__subtitle">
-            Введіть код подарункового ваучера тут
-            </div>
-            <form class="cart-discount__form" action="#">
-              <input class="cart-discount__input" type="text" placeholder="Введіть код подарункового ваучера тут">
-              <button class="cart-discount__btn" type="submit">застосувати</button>
-            </form>
-          </div> 
-        </div>
-        <div class="cart-items">
-          <div class="cart-items__delivery">
-            <h5 class="cart-items__title">
-              Вартість доставки
-            </h5>
-            <form class="cart-items__form" action="#">
-              <label class="cart-items__label">Оберіть область</label>
-              <select class="cart-items__select">
+              <label class="checkout-details__label">Oбласть <span>*</span></label>
+              <select class="cart-items__select" required>
                 <option>Вінницька</option>
                 <option>Волинська</option>
                 <option>Дніпропетровська</option>
@@ -347,8 +197,8 @@
                 <option>Чернівецька</option>
                 <option>Черкасська</option>
               </select>
-              <label class="cart-items__label">Оберіть місто</label>
-              <select class="cart-items__select">
+              <label class="checkout-details__label">Mісто <span>*</span></label>
+              <select class="cart-items__select" required>
                 <option>Вінниця</option>
                 <option>Хмільник</option>
                 <option>Жмеринка</option>
@@ -356,41 +206,100 @@
                 <option>Шаргород</option>
                 <option>Бар</option>
               </select>
-              <label class="cart-items__label">Поштовий індекс</label>
-              <input class="cart-items__input" type="number" placeholder="Поштовий індекс">
-              <button class="cart-items__btn-left">Підсумок</button>
+              <div class="checkout-details__item">
+              <label class="checkout-details__label">Адреса <span>*</span></label>
+              <input class="checkout-details__input" type="text" placeholder="Адреса" required>
+              </div>
+              <div class="checkout-details__item">
+              <label class="checkout-details__label">Поштовий індекс</label>
+              <input class="checkout-details__input" type="number" placeholder="Поштовий індекс">
+              </div>
+              <div class="checkout-details__item">
+              <label class="checkout-details__label">Назва компанії</label>
+              <input class="checkout-details__input" type="text">
+              </div>
+              <div class="checkout-details__box">
+                <div class="checkout-details__box-lastname">
+                  <label class="checkout-details__label">Email <span>*</span></label>
+                  <input class="checkout-details__input" type="email" required>
+                </div>
+                <div class="checkout-details__box-name">
+                  <label class="checkout-details__label">Телефон <span>*</span></label>
+                  <input class="checkout-details__input" type="tel" required>
+                </div>
+              </div>
+              <div class="checkout-details__box-checkbox">
+                <input class="checkout-details__input-checkbox" type="checkbox">
+                <label class="checkout-details__label-checkbox">Створити акаунт?</label>
+              </div>
             </form>
           </div>
-          <div class="cart-items__calculation">
-            <h5 class="cart-items__title">
-            Розрахунок кошика
-            </h5>
-            <div class="cart-items__box">
-              <div class="cart-items__box-item">
-                <div class="cart-items__box-textleft">Проміжний підсумок</div>
-                <div class="cart-items__box-textright">3499.00 грн</div>
+
+          <div class="checkout-order">
+            <div class="checkout-order__total">
+              <h5 class="checkout-order__title">Ваше замовлення</h5>
+              <div class="checkout-order__item checkout-order__item-top">
+                <div class="checkout-order__text-left">Продукт</div>
+                <div class="checkout-order__text-right">Всього</div>
               </div>
-              <div class="cart-items__box-item">
-                <div class="cart-items__box-textleft">Купон</div>
-                <div class="cart-items__box-textright">-200.00 грн</div>
+              <div class="checkout-order__items">
+                <div class="checkout-order__item">
+                  <div class="checkout-order__text-left">Годинник чоловічий</div>
+                  <div class="checkout-order__text-right">2749,00 грн</div>
+                </div>
+                <div class="checkout-order__item">
+                  <div class="checkout-order__text-left">Сумка Шопер</div>
+                  <div class="checkout-order__text-right">4899.00 грн</div>
+                </div>
               </div>
-              <div class="cart-items__box-item">
-                <div class="cart-items__box-textleft">Доставка</div>
-                <div class="cart-items__box-textright">Доставка Безкоштовна</div>
+              <div class="checkout-order__items">
+                <div class="checkout-order__item">
+                  <div class="checkout-order__text-left">Проміжний підсумок</div>
+                  <div class="checkout-order__text-right">7648.00 грн</div>
+                </div>
+                <div class="checkout-order__item">
+                  <div class="checkout-order__text-left">Доставка</div>
+                  <div class="checkout-order__text-right">Безкоштовно</div>
+                </div>
+              </div>
+              <div class="checkout-order__item-bottom">
+                <div class="checkout-order__text-left">Підсумок</div>
+                <div class="checkout-order__text-right">7648.00 грн</div>
               </div>
             </div>
-            <div class="cart-items__item">
-              <div class="cart-items__text-left">Підсумок</div>
-              <div class="cart-items__text-right">3299.00 грн</div>
+
+            <div class="checkout-order__payment">
+              <div class="checkout-order__payment-box">
+                <input class="checkout-order__payment-radio" type="radio" name="payment">
+                <span class="checkout-order__payment-text">ПриватБанк</span>
+              </div>
+              <div class="checkout-order__payment-box">
+                <input class="checkout-order__payment-radio" type="radio" name="payment">
+                <span class="checkout-order__payment-text">Ощад Банк</span>
+              </div>
+              <div class="checkout-order__payment-box">
+                <input class="checkout-order__payment-radio" type="radio" name="payment">
+                <span class="checkout-order__payment-text">Монобанк</span>
+              </div>
+              <div class="checkout-order__payment-box">
+                <input class="checkout-order__payment-radio" type="radio" name="payment">
+                <span class="checkout-order__payment-text">Visa</span>
+              </div>
+              <div class="checkout-order__payment-box">
+                <input class="checkout-order__payment-radio" type="radio" name="payment">
+                <span class="checkout-order__payment-text">MasterCard</span>
+              </div>
+              <div class="checkout-order__payment-box">
+                <input class="checkout-order__payment-radio" type="radio" name="payment">
+                <span class="checkout-order__payment-text">PayPal</span>
+              </div>
             </div>
-            <button class="cart-items__btn-right">
-              оформити замовлення
-            </button>
+            <button class="checkout-order__btn" type="submit">Замовити</button>
           </div>
+
         </div>
       </div>
     </section>
-
   </main>
 
 
