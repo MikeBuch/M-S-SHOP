@@ -21,6 +21,7 @@
     "jquery": "^3.6.0"
   },
   "dependencies": {
+    "jquery-form-styler": "^2.0.2",
     "node-fetch": "^2.6.6",
     "rateyo": "^2.3.5",
     "sass": "^1.53.0",

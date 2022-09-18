@@ -25,3 +25,34 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+
+.breadcrumbs{
+  padding: 50px 0 40px;
+  &__list{
+    display: flex;
+  }
+  &__item{
+    padding-right: 30px;
+    color: #333333;
+    position: relative;
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url('../images/icons/chevrons-right.svg');
+      width: 8px;
+      height: 8px;
+      top: 8px;
+      right: 10px;
+    }
+    &:last-child{
+      color: $accent;
+      padding-right: 0;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__link{
+    color: inherit;
+  }
+}
