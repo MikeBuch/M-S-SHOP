@@ -837,13 +837,16 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 65px;
+
   &__item {
     max-width: 550px;
     width: 100%;
   }
-  &__item + .cart-discount__item{
+
+  &__item+.cart-discount__item {
     margin-left: 40px;
   }
+
   &__title {
     text-transform: uppercase;
     font-size: 16px;
@@ -870,7 +873,8 @@
     border-bottom: 1px solid #a3a2a3;
     padding: 10px 20px;
   }
-  &__btn{
+
+  &__btn {
     text-transform: uppercase;
     background-color: $accent;
     border: none;
@@ -879,72 +883,84 @@
   }
 }
 
-.cart-items{
+.cart-items {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
-  &__delivery{
+
+  &__delivery {
     max-width: 550px;
     width: 100%;
     margin-right: 40px;
   }
-  &__title{
+
+  &__title {
     text-transform: uppercase;
     font-size: 16px;
     margin-bottom: 25px;
   }
-  &__form{
+
+  &__form {
     display: flex;
     flex-direction: column;
     max-width: 550px;
     width: 100%;
     @extend %roboto-500;
   }
-  &__label{
+
+  &__label {
     color: #777777;
     font-size: 14px;
     margin-bottom: 5px;
     @extend %roboto-500;
   }
-  &__select{
+
+  &__select {
     width: 100%;
     margin-bottom: 15px;
   }
-  &__input{
+
+  &__input {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
     border: 1px solid #a3a2a3;
     height: 32px;
   }
-  &__btn-left{
+
+  &__btn-left {
     text-transform: uppercase;
     width: 150px;
     padding: 5px 0;
     background-color: transparent;
-    border:  1px solid #cccccc;
+    border: 1px solid #cccccc;
     cursor: pointer;
-    &:hover{
+
+    &:hover {
       border: 1px solid $accent;
       background-color: $accent;
       color: #fff;
     }
   }
-  &__calculation{
+
+  &__calculation {
     max-width: 550px;
     width: 100%;
   }
-  &__box{
+
+  &__box {
     border: 1px solid #a3a2a3;
     padding: 25px 35px 20px;
   }
-  &__box-item{
+
+  &__box-item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
     @extend %roboto-500;
   }
-  &__item{
+
+  &__item {
     display: flex;
     justify-content: space-between;
     padding: 22px 35px 29px;
@@ -953,7 +969,8 @@
     margin-bottom: 18px;
     @extend %roboto-500;
   }
-  &__btn-right{
+
+  &__btn-right {
     display: block;
     margin-left: auto;
     padding: 5px 0;
@@ -962,13 +979,15 @@
     border: 1px solid #cccccc;
     background-color: transparent;
     @extend %roboto-500;
+
     &:hover {
-        border: 1px solid $accent;
-        background-color: $accent;
-        color: #fff;
+      border: 1px solid $accent;
+      background-color: $accent;
+      color: #fff;
     }
   }
 }
+
 .jq-selectbox__select {
   height: 46px;
   width: 100%;
@@ -979,19 +998,22 @@
   color: #333;
   text-shadow: none;
 }
+
 .jq-selectbox__select-text {
   display: block;
   margin-top: 3px;
   width: 100%;
 }
+
 .jq-selectbox__trigger {
   position: absolute;
   top: 0;
   right: 0;
   width: 0;
   height: 100%;
-  border-left: none; 
+  border-left: none;
 }
+
 .jq-selectbox__trigger-arrow {
   position: absolute;
   top: 18px;
@@ -1001,26 +1023,31 @@
   border: none;
   background-image: url('../images/icons/chevron-down.svg')
 }
+
 .jq-selectbox__dropdown {
   width: 100%;
   margin: 2px 0 0;
   padding-left: 20px;
   border: 1px solid #a3a2a3;
   border-radius: 0;
-  background: #fff;;
+  background: #fff;
+  ;
   box-shadow: none;
 }
+
 .jq-selectbox li.selected {
   background-color: #a3abb1;
   color: #fff;
 }
+
 .jq-selectbox li:hover {
   background-color: #a3abb1;
   color: #fff;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
 }
 
 input[type='number'],
@@ -1030,93 +1057,110 @@ input[type="number"]:focus {
   -moz-appearance: textfield;
 }
 
-.checkout{
-  &__wrapper{
+.checkout {
+  &__wrapper {
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;
   }
 }
-.checkout-details{
+
+.checkout-details {
   max-width: 660px;
   width: 100%;
   margin-right: 30px;
-  &__title{
+
+  &__title {
     text-transform: uppercase;
     font-size: 16px;
     @extend %roboto-700;
     margin-bottom: 30px;
   }
-  &__form{
+
+  &__form {
     max-width: 660px;
     width: 100%;
   }
-  &__box{
+
+  &__box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
   }
+
   &__box-lastname,
-  &__box-name{
+  &__box-name {
     display: flex;
     flex-direction: column;
     max-width: 300px;
     width: 100%;
   }
-  &__box-lastname{
+
+  &__box-lastname {
     margin-right: 50px;
   }
-  &__label{
-  
-    span{
+
+  &__label {
+
+    span {
       color: #dc4b4e;
     }
   }
-  &__item{
+
+  &__item {
     display: flex;
     flex-direction: column;
   }
-  &__input{
+
+  &__input {
     width: 100%;
     margin-bottom: 20px;
     border: 1px solid #a3a2a3;
     height: 46px;
     padding: 0 20px;
   }
-  &__box-checkbox{
+
+  &__box-checkbox {
     display: flex;
   }
-  &__input-checkbox{
+
+  &__input-checkbox {
     margin-right: 5px;
   }
 }
 
-.checkout-order{
+.checkout-order {
   max-width: 445px;
   width: 100%;
-  &__total{
+
+  &__total {
     border: 1px solid #a3a2a3;
     padding: 35px 25px 30px 30px;
   }
-  &__title{
+
+  &__title {
     text-transform: uppercase;
     font-size: 16px;
     @extend %roboto-700;
     margin-bottom: 30px;
   }
-  &__item{
+
+  &__item {
     display: flex;
     justify-content: space-between;
     padding-bottom: 10px;
   }
-  &__item-top{
+
+  &__item-top {
     border-bottom: 1px solid #a3a2a3;
   }
-  &__items{
+
+  &__items {
     padding: 15px 0;
     border-bottom: 1px solid #a3a2a3;
   }
-  &__item-bottom{
+
+  &__item-bottom {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
@@ -1124,17 +1168,20 @@ input[type="number"]:focus {
     text-transform: uppercase;
     margin-top: 25px;
   }
-  &__payment{
+
+  &__payment {
     border: 1px solid #a3a2a3;
     border-top: none;
     padding: 30px 25px 30px 30px;
   }
-  &__payment-box{
+
+  &__payment-box {
     margin-bottom: 10px;
     display: flex;
     align-items: center;
   }
-  &__btn{
+
+  &__btn {
     display: block;
     margin-left: auto;
     margin-top: 20px;
@@ -1155,7 +1202,8 @@ input[type="number"]:focus {
   background-color: transparent;
   box-shadow: none;
   position: relative;
-  &::before{
+
+  &::before {
     content: "";
     position: absolute;
     width: 10px;
@@ -1174,6 +1222,117 @@ jq-checkbox,
   box-shadow: none;
   cursor: pointer;
 }
+
+.comparison {
+  &__inner {
+    display: grid;
+    grid-template-columns: 13% 29% 29% 29%;
+    border: 1px solid #b3b2b3;
+    border-bottom: 2px solid #b3b2b3;
+    margin-bottom: 150px;
+  }
+
+  &__item {
+    border: 1px solid #b3b2b3;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+  }
+
+  &__item-products {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  &__item-photo {
+    height: 190px;
+    line-height: 190px;
+  }
+
+  &__item-description {
+    height: 180px;
+    line-height: 20px;
+  }
+
+  &__item-descriptionname {
+    height: 180px;
+    line-height: 180px;
+  }
+  &__item-box{
+    height: 100px;
+    border-bottom: none;
+  }
+
+  &__name {
+    text-align: center;
+    @extend %roboto-500;
+  }
+
+  &__text {
+    text-align: center;
+    padding: 0 30px;
+  }
+  &__description-text{
+    padding: 20px 15px 15px 30px;
+  }
+  &__img-box{
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__img{
+    max-width: 100px;
+    height: 120px;
+    object-fit: contain;
+    border: 1px solid #b3b2b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__star{
+    margin: 0 auto;
+    padding-top: 17px;
+  }
+  &__box{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    svg{
+      cursor: pointer;
+      path{
+        fill: #000;
+      }
+      &:hover{
+        path{
+          fill: $accent;
+        }
+      }
+    }
+  }
+  &__box-btn{
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #b3b2b3;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 150px;
+    @extend %roboto-500;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:hover{
+      border: 1px solid $accent;
+      color: #fff;
+      background-color: $accent;
+    }
+  }
+}
+
+
+
+
 
 
 
