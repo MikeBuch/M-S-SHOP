@@ -19,4 +19,68 @@ $(function () {
   })
 
   $('.cart__number-input, .cart-items__select, .checkout-order__payment-radio').styler();
+
 })
+
+var $range = $(".filter-price__input");
+var $inputFrom = $(".filter-price__input-from");
+var $inputTo = $(".filter-price__input-to");
+var instance;
+var min = 0;
+var max = 50000;
+var from = 0;
+var to = 0;
+
+$range.ionRangeSlider({
+  skin: "round",
+  type: "double",
+  min: min,
+  max: max,
+  from: 0,
+  to: 50000,
+  onStart: updateInputs,
+  onChange: updateInputs,
+  onFinish: updateInputs
+});
+instance = $range.data("ionRangeSlider");
+
+function updateInputs(data) {
+  from = data.from;
+  to = data.to;
+
+  $inputFrom.prop("value", from);
+  $inputTo.prop("value", to);
+}
+
+$inputFrom.on("change", function () {
+  var val = $(this).prop("value");
+
+  if (val < min) {
+    val = min;
+  } else if (val > to) {
+    val = to;
+  }
+
+  instance.update({
+    from: val
+  });
+
+  $(this).prop("value", val);
+
+});
+
+$inputTo.on("change", function () {
+  var val = $(this).prop("value");
+
+  if (val < from) {
+    val = from;
+  } else if (val > max) {
+    val = max;
+  }
+
+  instance.update({
+    to: val
+  });
+
+  $(this).prop("value", val);
+});
